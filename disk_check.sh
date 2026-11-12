@@ -1,4 +1,5 @@
 #!/bin/bash
+# Written with Claude Code, tested by Rob
 # disk_check.sh - shows how much free disk space this Mac has
 
 echo "Disk Space Check"

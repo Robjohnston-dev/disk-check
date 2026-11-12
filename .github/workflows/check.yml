@@ -1,0 +1,19 @@
+name: Check disk script
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        run: shellcheck disk_check.sh
+
+      - name: Run the script
+        run: ./disk_check.sh
